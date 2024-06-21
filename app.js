@@ -1,12 +1,11 @@
 
-// var todoBtn=document.getElementById('todo-Btn')
-// console.log(todoBtn);
 var count=0
 function showInfo() {
     var userText=document.getElementById('text-Inp').value
-    localStorage.setItem('User Todo ',userText)
+    var showTodo=document.getElementById('showTodo')
     showTodo.innerHTML+=`<br><ul><li style="list-style-type: none;" id="item">${userText}<button id="del" onclick="Delete()">Delete</button></li></ul>`
-    // var getList=document.getElementById('item')
+    localStorage.setItem('User Todo ',userText)
+    
 count++
 document.getElementById('text-Inp').value=""
 }
